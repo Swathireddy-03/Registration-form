@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Event Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your name" required>
+
+            <label for="rollNo">Roll No</label>
+            <input type="text" id="rollNo" placeholder="Enter your roll number" required>
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+
+            <label for="department">Department</label>
+            <select id="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="IT">IT</option>
+            </select>
+
+            <label for="event">Event Name</label>
+            <select id="event" required>
+                <option value="">-- Select Event --</option>
+                <option value="Coding Competition">Coding Competition</option>
+                <option value="Quiz">Quiz</option>
+                <option value="Paper Presentation">Paper Presentation</option>
+                <option value="Web Designing">Web Designing</option>
+            </select>
+
+            <label>Gender</label>
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender" value="Male" required> Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female"> Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Other"> Other
+                </label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
